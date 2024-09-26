@@ -57,6 +57,13 @@ int main(int argc, char** args) {
 	// Quit SDL
 	SDL_Quit();
 
+    // Print to stop compiler screaming at me
+    // Source: https://stackoverflow.com/questions/3024197/what-does-int-argc-char-argv-mean
+    cout << "Have " << argc << " arguments:\n";
+    for (int i = 0; i < argc; ++i) {
+        cout << args[i] << "\n";
+    }
+
 	// End the program
 	return 0;
 }
